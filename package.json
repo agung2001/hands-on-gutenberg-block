@@ -1,0 +1,24 @@
+{
+  "name": "hands-on-gutenberg-block",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agung2001/hands-on-guttenberg-block.git"
+  },
+  "author": "Agung Sundoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agung2001/hands-on-guttenberg-block/issues"
+  },
+  "homepage": "https://github.com/agung2001/hands-on-guttenberg-block#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^25.0.0"
+  }
+}
