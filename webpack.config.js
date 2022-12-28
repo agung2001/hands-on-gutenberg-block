@@ -5,7 +5,7 @@ module.exports = {
 	...defaultConfig,
 	...{
 		"entry": {
-			"blocks-hello-world": "./assets/blocks/hello-world/index.js",
+			"hello-world": "./assets/blocks/hello-world/index.js",
 		},
 		"output": {
 			path: path.resolve(__dirname, 'assets/build/blocks'),

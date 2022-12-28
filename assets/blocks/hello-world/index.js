@@ -1,5 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import HelloWorld from "./HelloWorld";
+const { registerBlockType } = wp.blocks;
 
-ReactDOM.render(<HelloWorld />, document.getElementById('app'))
+/** Register Block */
+registerBlockType('hands-on-gutenberg-block/hello-world',{
+	/** Built-in attributes */
+	title: `Hello World`,
+	description: `Just another simple WordPress block`,
+	icon: `format-image`,
+	category: 'design',
+
+	/** Custom Attributes */
+	attributes: {},
+
+	/** Built-in functions */
+	edit(){},
+
+	save(){},
+})

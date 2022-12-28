@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/agung2001/hands-on-guttenberg-block#readme",
   "devDependencies": {
+    "@wordpress/block-library": "^8.0.0",
+    "@wordpress/blocks": "^12.0.0",
+    "@wordpress/components": "^23.0.0",
     "@wordpress/scripts": "^25.0.0"
   }
 }
