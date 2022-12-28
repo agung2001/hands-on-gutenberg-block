@@ -2,10 +2,14 @@ const path = require( 'path' );
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config.js' );
 
 module.exports = {
-    ...defaultConfig,
-    ...{
+	...defaultConfig,
+	...{
 		"entry": {
-        	"blocks-hello-world": path.resolve( process.cwd(), 'blocks/hello-world', 'index.js' ),
+			"blocks-hello-world": "./assets/blocks/hello-world/index.js",
+		},
+		"output": {
+			path: path.resolve(__dirname, 'assets/build/blocks'),
+			filename: '[name].js'
 		}
-    }
+	}
 }
