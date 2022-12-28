@@ -5,6 +5,7 @@
  * Version: 1.0
  * Author: Agung Sundoro
  * Author URI: https://agung2001.github.io
+ * Text Domain: hands-on-gutenberg-block
  */
 
 if (!defined('ABSPATH')) exit;

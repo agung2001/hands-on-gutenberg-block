@@ -1,4 +1,5 @@
 const { registerBlockType } = wp.blocks;
+import save from "./save";
 
 /** Register Block */
 registerBlockType('hands-on-gutenberg-block/hello-world',{
@@ -28,9 +29,5 @@ registerBlockType('hands-on-gutenberg-block/hello-world',{
 	},
 
 	// Render to Frontend
-	save({ attributes }){
-		return <>
-			Hello {attributes.author}
-		</>
-	},
+	save
 })
