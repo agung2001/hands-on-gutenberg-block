@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "wp-scripts build",
-    "start": "wp-scripts start"
+    "build:wp": "wp-scripts build",
+    "watch:wp": "wp-scripts start"
   },
   "repository": {
     "type": "git",

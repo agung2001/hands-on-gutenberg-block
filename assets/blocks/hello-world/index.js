@@ -5,14 +5,32 @@ registerBlockType('hands-on-gutenberg-block/hello-world',{
 	/** Built-in attributes */
 	title: `Hello World`,
 	description: `Just another simple WordPress block`,
-	icon: `format-image`,
+	icon: `admin-site`,
 	category: 'design',
 
 	/** Custom Attributes */
-	attributes: {},
+	attributes: {
+		author: {
+			type: `string`
+		}
+	},
 
 	/** Built-in functions */
-	edit(){},
+	// Gutenberg Editing
+	edit({attributes, setAttributes}){
+		return <>
+			Hello
+			<input type="text"
+			   value={attributes.author}
+			   onChange={(event) => { setAttributes({ author: event.target.value }) }}
+			/>
+		</>
+	},
 
-	save(){},
+	// Render to Frontend
+	save({ attributes }){
+		return <>
+			Hello {attributes.author}
+		</>
+	},
 })

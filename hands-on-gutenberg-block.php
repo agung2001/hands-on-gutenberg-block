@@ -1,6 +1,7 @@
 <?php
 /**
- * Plugin Name: Hands on Gutenberg Block
+ * Plugin Name: Hands on Gutenberg Block (HOGB)
+ * Description: Just another simple WordPress block
  * Version: 1.0
  * Author: Agung Sundoro
  * Author URI: https://agung2001.github.io
@@ -18,7 +19,7 @@ function register_block() {
 	/** Register Script */
 	wp_register_script(
 		'block-hello-world-js',
-		HOGB_BLOCKS_URL . '/assets/blocks/hello-world/index.js',
+		HOGB_BLOCKS_URL . '/assets/build/blocks/hello-world.js',
 		array( 'wp-blocks'),
 	);
 
